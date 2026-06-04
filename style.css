@@ -1,0 +1,25 @@
+body {
+    background-color: #7d5a3f;
+}
+
+.header {
+    text-align: center;
+    color: rgb(223, 213, 191);
+    font-size: 25px;
+}
+
+.nav {
+    background-color: rgb(223, 213, 191);
+    text-align: center;
+    padding: 15px;
+    border: whitesmoke;
+    border-radius: 15px;
+}
+
+a:link {
+    font-size: 25px;
+    margin: 25px;
+}
+html{
+scroll-behavior: smooth;
+}
