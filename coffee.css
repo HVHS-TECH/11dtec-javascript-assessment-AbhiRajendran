@@ -6,6 +6,15 @@ body {
     text-align: center;
     color: rgb(223, 213, 191);
     font-size: 25px;
+    padding: 10px;
+}
+
+.logo{
+    margin: 0;
+    position: absolute;
+    top: 9%;
+    left: 5%;
+    transform: translate(-50%, -50%);
 }
 
 .nav {
