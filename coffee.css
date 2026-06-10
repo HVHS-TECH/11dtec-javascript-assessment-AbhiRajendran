@@ -6,15 +6,17 @@ body {
     text-align: center;
     color: rgb(223, 213, 191);
     font-size: 25px;
-    padding: 10px;
 }
 
-.logo{
+h1{
     margin: 0;
     position: absolute;
-    top: 11.5%;
-    left: 7%;
+    top: 8%;
+    left: 50%;
     transform: translate(-50%, -50%);
+}
+.logo{
+padding: 15px;
 }
 
 .nav {
