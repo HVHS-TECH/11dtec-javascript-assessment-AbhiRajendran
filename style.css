@@ -55,3 +55,16 @@ transition: 500ms ease-in-out;
 #Slideshow.fade-out{
 opacity: 0;
 }
+
+p{
+font-size: 30px;
+font-weight: 500;
+}
+
+.footer {
+  background-color:  rgb(223, 213, 191);
+  padding: 15px;
+  border: whitesmoke;
+  border-radius: 15px;
+  text-align: center;
+}

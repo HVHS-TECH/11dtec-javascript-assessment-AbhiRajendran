@@ -31,3 +31,12 @@ a:link {
     font-size: 25px;
     margin: 25px;
 }
+
+
+.footer {
+  background-color:  rgb(223, 213, 191);
+  padding: 15px;
+  border: whitesmoke;
+  border-radius: 15px;
+  text-align: center;
+}
