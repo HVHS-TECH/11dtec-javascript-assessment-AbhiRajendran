@@ -1,7 +1,7 @@
 console.log("Working?")
 
 
-const images =["cafeone.png","cafetwo.png","cafethree.png"];
+const images =["coffee.jpg","tea.jpg","cafethree.png"];
 let currentImage = 0;
 
 const imageElement = document.getElementById("Slideshow")
