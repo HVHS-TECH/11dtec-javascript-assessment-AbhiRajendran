@@ -15,4 +15,4 @@ imageElement.classList.remove("fade-out");
 }, 500);
 }
 
-setInterval(changeImage, 4000);
+setInterval(changeImage, 4000); 

@@ -36,53 +36,83 @@
         </div>
 
         <div class="intro-img">
-            <img id="Slideshow" src="coffee.jpg" alt="Slideshow">
+            <img id="Slideshow" src="coffee.jpg" alt="Slideshow" style="border-radius: 15px;">
         </div>
 
         <div class="main">
 
             <p>At Creamy Cafe, we are passionate about serving premium coffee and tea. Our carefully selected
-               ingredients and handcrafted drinks are made to deliver the perfect experience in every cup.</p>
+                ingredients and handcrafted drinks are made to deliver the perfect experience in every cup.</p>
 
         </div>
 
-        <br>
-        
+      
+
         <div class="featured_text">
-            <p style="text-align: center; text-decoration: underline; font-size: 40px;">Our Featured Items</p>
+            <p style="text-align: center; text-decoration: underline; font-size: 50px; text-underline-offset: 10px;">Our Featured Items</p>
         </div>
 
         <br><br>
 
         <div class="featured_items">
-        <div class="featured_item">
-            <img src="espresso.jpg" alt="Espresso"> 
-            <div class="name">
-                <h2>Espresso</h2>  
+            <div class="featured_item">
+                <img src="espresso.jpg" alt="Espresso"  style="border-radius: 40px;">
+                <div class="name">
+                    <h2>Espresso
+                        <br><br>
+                        Price: $7
+                        <form onsubmit="featuredItem(); return false;">
+                            <input type="number" id="homeCoffee" placeholder="Quantity">
+                            <button onclick="homeCoffee()">Add</button>
+                        </form>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="featured_item">
+                <img src="iced_coffee.jpg" alt="Espresso"  style="border-radius: 40px;">
+                <div class="name">
+                    <h2>Iced Coffee
+                        <br><br>
+                        Price: $10
+                        <form onsubmit="featuredItem(); return false;">
+                            <input type="number" id="homeCoffee" placeholder="Quantity">
+                            <button onclick="homeCoffee()">Add</button>
+                        </form>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="featured_item">
+                <img src="chai_latte.jpg" alt="Espresso" style="border-radius: 40px;">
+                <div class="name">
+                    <h2>Chai Latte 
+                        <br><br>
+                        Price: $5
+                        <form onsubmit="featuredItem(); return false;">
+                            <input type="number" id="homeCoffee" placeholder="Quantity">
+                            <button onclick="homeCoffee()">Add</button>
+                        </form>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="featured_item">
+                <img src="matcha_tea.jpg" alt="Espresso"  style="border-radius: 40px;">
+                <div class="name">
+                    <h2>Matcha Tea
+                        <br><br>
+                        Price: $6
+                        <form onsubmit="featuredItem(); return false;">
+                            <input type="number" id="homeCoffee" placeholder="Quantity">
+                            <button onclick="homeCoffee()">Add</button>
+                        </form>
+                    </h2>
+
+                </div>
             </div>
         </div>
 
-        <div class="featured_item">
-            <img src="iced_coffee.jpg" alt="Espresso"> 
-            <div class="name">
-                <h2>Iced Coffee</h2>  
-            </div>
-        </div>
-
-        <div class="featured_item">
-            <img src="chai_latte.jpg" alt="Espresso"> 
-            <div class="name">
-                <h2>Chai Latte</h2>  
-            </div>
-        </div>
-
-        <div class="featured_item">
-            <img src="matcha_tea.jpg" alt="Espresso"> 
-            <div class="name">
-                <h2>Matcha Tea</h2>  
-            </div>
-        </div>
-        </div>
 
         <div class="footer">
 

@@ -24,7 +24,6 @@ h1 {
     background-color: rgb(223, 213, 191);
     text-align: center;
     padding: 15px;
-    border: whitesmoke;
     border-radius: 15px;
 }
 
@@ -70,12 +69,12 @@ color:  rgb(223, 213, 191);;
   text-align: center;
 }
 
-.featured_items {
+.featured_item {
     background-color: rgb(223, 213, 191);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     text-align: center;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 40px;
 }
 
 .name{
@@ -136,6 +135,7 @@ grid-area: intro-img;
 }
 
 .container div.footer {
+  margin-top: 20px;
   grid-area: footer;
   text-align: center;
 }
