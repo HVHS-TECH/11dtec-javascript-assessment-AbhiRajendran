@@ -7,7 +7,7 @@ body {
     color: rgb(223, 213, 191);
     font-size: 25px;
 }
-
+ 
 h1{
     margin: 0;
     position: absolute;
@@ -23,7 +23,6 @@ padding: 15px;
     background-color: rgb(223, 213, 191);
     text-align: center;
     padding: 15px;
-    border: whitesmoke;
     border-radius: 15px;
 }
 
