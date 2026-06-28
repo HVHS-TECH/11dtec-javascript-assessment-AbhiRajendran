@@ -32,7 +32,7 @@ a:link {
     margin: 25px; 
 }
 
-.intro-img {
+.intro_img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +87,7 @@ color:  rgb(223, 213, 191);;
   grid-template-areas:
     "logo header"
     "nav nav"
-    "intro-img intro-img"
+    "intro_img intro_img"
     "main main"
     "featured_text featured_text"
     "featured_items featured_items"
@@ -115,8 +115,8 @@ color:  rgb(223, 213, 191);;
   grid-area: nav;
 }
 
-.container div.intro-img {
-grid-area: intro-img;
+.container div.intro_img {
+grid-area: intro_img;
 }
 
 .container div.main {
