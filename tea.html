@@ -12,40 +12,198 @@
 
 <body>
 
-    <div class="logo">
-        <a href="index.html">
-        <img src="Creamy cafe.png" alt="Logo" style="width: 160px; height: 120px;">
-        </a>
-    </div>
+    <div class="container">
 
-    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Creamy cafe.png" alt="Logo" style="width: 160px; height: 120px;">
+            </a>
+        </div>
 
-        <h1>TeaS</h1>
+        <div class="header">
 
-    </div>
-    
-  <div class="nav">
+            <h1>TeaS</h1>
 
-    <a href="index.html" style="text-decoration: none;">Home</a>
-    <a href="coffee.html"  style="text-decoration: none;">CoffeeS</a>
-    <a href="tea.html" style="text-decoration: none;">TeaS</a>
-    <a href="cart.html" style="text-decoration: none;">Cart</a>
+        </div>
 
-  </div>
+        <div class="nav">
 
-    <div class="main">
+            <a href="index.html" style="text-decoration: none;">Home</a>
+            <a href="coffee.html" style="text-decoration: none;">CoffeeS</a>
+            <a href="tea.html" style="text-decoration: none;">TeaS</a>
+            <a href="cart.html" style="text-decoration: none;">Cart</a>
 
-        <p></p>
+        </div>
 
-    </div>
+        <div class="tea_menu">
+            <div class="menu_tea">
+                <img src="chai_latte.jpg" alt="Chai Latte" style="border-radius: 40px;">
+                <div class="tea_name">
 
-    <div class="footer">
+                    <h2> Creamy Chai Latte
+                        <br><br>
+                        Price: $5
+                    </h2>
 
-        <h2>Website made by Abhi @2026.</h2>
+                    <form onsubmit="homeTea('homeChaiLatte','Creamy Chai Latte'); return false;">
+                        <input type="number" id="homeChaiLatte" placeholder="Quantity" min="1">
+                        <button type="submit">Add</button>
+                    </form>
 
-    </div>
+                </div>
+            </div>
 
-    <script src="tea.js"></script>
+
+            <div class="menu_tea">
+                <img src="breakfastTea.jpg" alt="Breakfast Tea" style="border-radius: 40px;">
+                <div class="tea_name">
+
+                    <h2> English Breakfast Tea
+                        <br><br>
+                        Price: $5
+                    </h2>
+
+                    <form onsubmit="homeTea('homeBreakfastTea','English Breakfast Tea'); return false;">
+                        <input type="number" id="homeBreakfastTea" placeholder="Quantity" min="1">
+                        <button type="submit">Add</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <div class="menu_tea">
+                <img src="matcha_tea.jpg" alt="Matcha Tea" style="border-radius: 40px;">
+                <div class="tea_name">
+
+                    <h2> Creamy Matcha Tea
+                        <br><br>
+                        Price: $6
+                    </h2>
+
+                    <form onsubmit="homeTea('homeMatchaTea','Creamy Matcha Tea'); return false;">
+                        <input type="number" id="homeMatchaTea" placeholder="Quantity" min="1">
+                        <button type="submit">Add</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <div class="menu_tea">
+                <img src="peachTea.jpg" alt="Iced Peach Tea" style="border-radius: 40px;">
+                <div class="tea_name">
+
+                    <h2> Iced Peach Tea 
+                        <br><br>
+                        Price: $8
+                    </h2>
+
+                    <form onsubmit="homeTea('homeIcedPeach','Iced Peach Tea'); return false;">
+                        <input type="number" id="homeIcedPeach" placeholder="Quantity" min="1">
+                        <button type="submit">Add</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <div class="menu_tea">
+                <img src="bubbleTea.jpg" alt="Bubble Tea" style="border-radius: 40px;">
+                <div class="tea_name">
+
+                    <h2> Bubble Tea
+                        <br><br>
+                        Price: $7
+                    </h2>
+
+                    <form onsubmit="homeTea('homeBubbleTea','Bubble Tea'); return false;">
+                        <input type="number" id="homeBubbleTea" placeholder="Quantity" min="1">
+                        <button type="submit">Add</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <div class="menu_tea">
+                <img src="greenTea.jpg" alt="Green Tea" style="border-radius: 40px;">
+                <div class="tea_name">
+
+                    <h2> Green Tea
+                        <br><br>
+                        Price: $6
+                    </h2>
+
+                    <form onsubmit="homeTea('homeGreenTea','Green Tea'); return false;">
+                        <input type="number" id="homeGreenTea" placeholder="Quantity" min="1">
+                        <button type="submit">Add</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <div class="menu_tea">
+                <img src="passionfruitTea.jpg" alt="Iced Passionfruit" style="border-radius: 40px;">
+                <div class="tea_name">
+
+                    <h2> Iced Passionfruit Tea
+                        <br><br>
+                        Price: $10
+                    </h2>
+
+                    <form onsubmit="homeTea('homeIcedPassionfruit','Iced Passionfruit Tea'); return false;">
+                        <input type="number" id="homeIcedPassionfruit" placeholder="Quantity" min="1">
+                        <button type="submit">Add</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <div class="menu_tea">
+                <img src="masalaTea.jpg" alt="Masala Chai" style="border-radius: 40px;">
+                <div class="tea_name">
+
+                    <h2> Masala Tea
+                        <br><br>
+                        Price: $7
+                    </h2>
+
+                    <form onsubmit="homeTea('homeMasalaTea','Masala Tea'); return false;">
+                        <input type="number" id="homeMasalaTea" placeholder="Quantity" min="1">
+                        <button type="submit">Add</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <div class="menu_tea">
+                <img src="icedBlackTea.jpg" alt="Iced Black Tea" style="border-radius: 40px;">
+                <div class="tea_name">
+
+                    <h2> Iced Black Tea
+                        <br><br>
+                        Price: $9
+                    </h2>
+
+                    <form onsubmit="homeTea('homeIcedBlackTea','Iced Black Tea'); return false;">
+                        <input type="number" id="homeIcedBlackTea" placeholder="Quantity" min="1">
+                        <button type="submit">Add</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="footer">
+
+                <h2>Website made by Abhi @2026.</h2>
+
+            </div>
+        </div>
+        <script src="tea.js"></script>
 
 </body>
 
