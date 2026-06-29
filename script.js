@@ -29,4 +29,4 @@ function addQuantity(id, name) {
 
     alert(quantity + " " + name + "(s) added to cart!");
 }
-
+    

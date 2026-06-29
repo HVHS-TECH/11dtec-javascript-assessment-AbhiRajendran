@@ -1,7 +1,7 @@
 body {
     background-color: #7d5a3f;
 }
-
+  
 .header {
     text-align: center;
     color: rgb(223, 213, 191);
@@ -40,4 +40,65 @@ a:link {
   text-align: center;
 }
 
+.menu_coffee {
+    background-color: rgb(223, 213, 191);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+}
 
+.coffee_name{
+    text-align: center;
+    padding: 2px 16px;
+}
+
+.menu_coffee img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "logo header"
+    "nav nav"
+    "coffee_menu coffee_menu"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 3px;
+  padding: 5px;
+}
+
+.container div {
+  padding: 10px;
+}
+
+.container div.logo {
+  grid-area: logo;
+}
+
+.container div.header {
+  grid-area: header;
+  text-align: center;
+
+}
+
+.container div.nav {
+  grid-area: nav;
+}
+
+.container div.coffee_menu {
+    grid-area: coffee_menu;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.container div.footer {
+  margin-top: 20px;
+  grid-area: footer;
+  text-align: center;
+}
