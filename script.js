@@ -21,7 +21,7 @@ setInterval(changeImage, 4000);
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
  
-function addQuantity(id, name) {
+function addQuantity(id, name, price) {
 
     let quantity = parseInt(document.getElementById(id).value);
 
@@ -32,7 +32,8 @@ function addQuantity(id, name) {
 
     cart.push({
         item: name,
-        quantity: quantity
+        quantity: quantity,
+        price:price
     }); 
 
     localStorage.setItem("cart", JSON.stringify(cart));

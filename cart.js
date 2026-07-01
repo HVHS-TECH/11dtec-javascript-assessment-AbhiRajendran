@@ -9,7 +9,6 @@ for(let i = 0; i < cart.length; i++){
     <p>
     ${cart[i].item} <br>
     Quantity: ${cart[i].quantity}
-    <br><br>
     </p>
     `;
 }
@@ -20,7 +19,7 @@ function resetCart() {
     cart = [];
     localStorage.setItem("cart", JSON.stringify(cart));
 
-    document.getElementById("cart").innerHTML = "<p><br>Your cart is empty.<br><br></p>";
+    document.getElementById("cart").innerHTML = "<p><br>Your cart is empty.<br></p>";
 
     alert("Cart has been reset.");
 }

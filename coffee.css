@@ -75,7 +75,7 @@ a:link {
 .container div {
   padding: 10px;
 }
-
+ 
 .container div.logo {
   grid-area: logo;
 }

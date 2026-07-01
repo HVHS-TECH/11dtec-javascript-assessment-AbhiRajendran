@@ -1,14 +1,25 @@
 console.log("Working?")    
 
  
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+ 
 function homeCoffee(id, name) {
-    let quantity = document.getElementById(id).value;
 
-    if (quantity <= 0 || quantity === "") {
-        alert("Please enter a quantity.");
+    let quantity = parseInt(document.getElementById(id).value);
+
+    if (isNaN(quantity) ||  quantity <=0) {
+        alert("Please enter a valid quantity.");
         return;
     }
 
-    alert(quantity + " " + name + "(s) added to cart!");
-}
+    cart.push({
+        item: name,
+        quantity: quantity
+    }); 
+
+    localStorage.setItem("cart", JSON.stringify(cart));
     
+    alert(quantity + " " + name + "(s) added to cart!");
+
+    document.getElementById(id).value = "";
+}
