@@ -8,7 +8,9 @@ for(let i = 0; i < cart.length; i++){
     output += `
     <p>
     ${cart[i].item} <br>
-    Quantity: ${cart[i].quantity}
+    Price : $${cart[i].price}<br>
+    Quantity : ${cart[i].quantity} <br>
+    Total Price : $${cart[i].quantity* cart[i].price}
     </p>
     `;
 }

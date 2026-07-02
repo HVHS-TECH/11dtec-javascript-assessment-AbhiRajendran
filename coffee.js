@@ -3,7 +3,7 @@ console.log("Working?")
  
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
  
-function homeCoffee(id, name) {
+function homeCoffee(id, name, price) {
 
     let quantity = parseInt(document.getElementById(id).value);
 
@@ -14,7 +14,8 @@ function homeCoffee(id, name) {
 
     cart.push({
         item: name,
-        quantity: quantity
+        quantity: quantity,
+        price:price
     }); 
 
     localStorage.setItem("cart", JSON.stringify(cart));
