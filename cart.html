@@ -33,11 +33,19 @@
 
   </div>
 
-  <div id="cart"></div><br>
+  <br>
 
-  <button onclick="resetCart()">Reset Order</button><br><br>
+  <div id="cart"></div>
 
-  <div class="footer">
+  <button id="reset" onclick="resetCart()">Reset Order</button><br>
+
+  <form onsubmit="nameAndMoney(); return false;">
+  <input type="text" id="name" placeholder="Name"><br><br>
+  <input type="number" id="money" placeholder="Money"><br><br>
+  <button type="submit">Place Order</button>
+  </form><br>
+
+  <div class="footer">  
 
     <h2>Website made by Abhi @2026.</h2>
     
