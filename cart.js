@@ -1,4 +1,7 @@
+/*Checking */
 console.log("Is it Working?")
+
+/*Showing items in Cart */
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -18,8 +21,17 @@ for (let i = 0; i < cart.length; i++) {
     </h4>   
     `;
 }
-output += `<h2>Total Cost: $${totalCost}</h2>`;
-document.getElementById("cart").innerHTML = output;
+
+if (cart.length > 0) {
+    output += `<h2>Total Cost: $${totalCost}</h2>`;
+    document.getElementById("cart").innerHTML = output;
+} else{
+    document.getElementById("cart").innerHTML = "<h4>Your cart is empty.</h4>";
+ 
+}
+
+
+/*Reset the whole cart */
 
 function resetCart() {
     cart = [];
@@ -30,6 +42,8 @@ function resetCart() {
     alert("Cart has been reset.");
 }
 
+/*Remove a single item*/
+
 function removeItem(index) {
     cart.splice(index, 1);
 
@@ -38,21 +52,23 @@ function removeItem(index) {
     location.reload();
 }
 
+/*Receipt */
+
 function nameAndMoney() {
     let customer = document.getElementById("name").value;
     let money = Number(document.getElementById("money").value);
 
-    if (customer === ""){
+    if (customer === "") {
         alert("Please enter your name.");
         return;
     }
-     
-    if (cart.length === 0){
+
+    if (cart.length === 0) {
         alert("You cart is empty.");
         return;
     }
 
-    if (money < totalCost){
+    if (money < totalCost) {
         alert("Not enough Money.");
         return;
     }
@@ -70,10 +86,10 @@ function nameAndMoney() {
     <h3>Items</h3>
     `;
 
-    for(let i = 0; i < cart.length; i++){
+    for (let i = 0; i < cart.length; i++) {
         let itemTotal = cart[i].price * cart[i].quantity;
 
-        receipt +=`
+        receipt += `
         ${cart[i].item}
         x ${cart[i].quantity}
         - $${itemTotal}<br>
@@ -91,10 +107,10 @@ function nameAndMoney() {
     `;
 
     document.getElementById("receipt").innerHTML = receipt;
-    receipt.style.display = "block";
+    document.getElementById("receipt").style.display = "block";
 
     cart = [];
     localStorage.setItem("cart", JSON.stringify(cart));
 
-    document.getElementById("cart").innerHTML = "";
+    document.getElementById("cart").innerHTML = "<h4>Your cart is empty.<br></h4>";
 }
