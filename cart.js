@@ -12,7 +12,7 @@ for (let i = 0; i < cart.length; i++) {
     let itemTotal = cart[i].quantity * cart[i].price;
     totalCost += itemTotal;
     output += `
-    <h4>
+    <h4> 
     ${cart[i].item} <br>
     Price : $${cart[i].price}<br>
     Quantity : ${cart[i].quantity} <br>
