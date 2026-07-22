@@ -55,7 +55,7 @@ a:link {
 
 .menu_coffee img {
     width: 350px;
-    height: 350px;
+    height: 350px; 
     object-fit: cover;
     border-radius: 20px;
 }

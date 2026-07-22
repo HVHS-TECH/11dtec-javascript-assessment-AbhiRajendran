@@ -1,39 +1,40 @@
 body {
-    background-color: #7d5a3f;
+  background-color: #7d5a3f;
 }
 
 .header {
-    text-align: center;
-    color: rgb(223, 213, 191);
-    font-size: 25px;
+  text-align: center;
+  color: rgb(223, 213, 191);
+  font-size: 25px;
 }
 
-h1{
-    margin: 0; 
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.logo{
-padding: 15px;
+
+.logo {
+  padding: 15px;
 }
 
 .nav {
-    background-color: rgb(223, 213, 191);
-    text-align: center;
-    padding: 15px;
-    border-radius: 15px;
-} 
+  background-color: rgb(223, 213, 191);
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+}
 
 a:link {
-    font-size: 25px;
-    margin: 25px;
+  font-size: 25px;
+  margin: 25px;
 }
 
 
 .footer {
-  background-color:  rgb(223, 213, 191);
+  background-color: rgb(223, 213, 191);
   padding: 15px;
   border: whitesmoke;
   border-radius: 15px;
@@ -41,23 +42,23 @@ a:link {
 }
 
 .menu_tea {
-    background-color: rgb(223, 213, 191);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    text-align: center;
-    padding: 10px;
-    border-radius: 30px;
+  background-color: rgb(223, 213, 191);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
 }
 
-.tea_name{
-    text-align: center;
-    padding: 2px 16px;
+.tea_name {
+  text-align: center;
+  padding: 2px 16px;
 }
 
 .menu_tea img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 20px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .container {
@@ -91,10 +92,10 @@ a:link {
 }
 
 .container div.tea_menu {
-    grid-area: tea_menu;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  grid-area: tea_menu;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .container div.footer {
