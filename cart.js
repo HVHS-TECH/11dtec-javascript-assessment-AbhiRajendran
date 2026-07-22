@@ -58,6 +58,7 @@ function nameAndMoney() {
     let customer = document.getElementById("name").value;
     let money = Number(document.getElementById("money").value);
 
+
     if (customer === "") {
         alert("Please enter your name.");
         return;
@@ -81,7 +82,7 @@ function nameAndMoney() {
     <hr>
     <p> Customer: ${customer}</p>
     <p> Date: ${new Date().toLocaleString()}</p>
-    <hr>
+    <hr> 
     
     <h3>Items</h3>
     `;

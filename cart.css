@@ -89,13 +89,16 @@ input {
 }
 
 #receipt {
-    width: 320px;
+    width: 370px;
+
     margin: 30px auto;
     padding: 20px;
     background: white;
+    border-radius: 20px;
     color: black;
     font-family: "Courier New", monospace;
-    border: 2px dotted black;
+    border: 10px double   black ;
+    outline: 4px solid;
     text-align: left;
 }
 
