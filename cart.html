@@ -41,7 +41,7 @@
 
   <form onsubmit="nameAndMoney(); return false;">
   <input type="text" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')" id="name" placeholder="Name"><br><br>
-  <input type="number" id="money" placeholder="Money"><br><br>
+  <input type="number" id="money" placeholder="Money" onkeydown="if(event.key==='e'||event.key==='E') event.preventDefault();"><br><br>
   <button type="submit">Place Order</button>
   </form><br>
 
